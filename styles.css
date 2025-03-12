@@ -39,54 +39,81 @@ body {
 
 
 /*///////////// 3.1 Header /////////////*/
-
 .header {
-    box-sizing: border-box;
-    margin: auto;
-    width: 50%;
-    padding: 20px;
+    width: 100%;
+    height: 600px; /* Adjust this height as needed */
     text-align: center;
+    overflow: hidden;
+
+    /* Background image applied to header only */
+    background-image: url('assets/images/mountains.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Center content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-    font-size: 70px;
+    position: relative;
+    font-size: 80px;
+    max-width: 100%;
     color: #1C2B32;
-    flex-wrap: wrap;
+    text-align: center;
+    white-space: normal;
+    height: 45vh;
 }
 
 .check {
     margin: -7px;
     background-color: #1C2B32;
-    color: white;
-    flex-wrap: wrap;
-
+    color: #fffdf1;
+    position: relative;
+    top: -190px;
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
 }
 
 button {
-    margin-top: 20px;
     width: 200px;
-    height: 50px;
+    height: 55px;
     border-radius: 0 25px 25px 0;
     border-color: #1C2B32;
-    flex-wrap: wrap;
-
+    border-style: double;
+    padding: 0 0 0 10px;
+    text-align: center;
 }
 
 #domein {
-    margin-top: 10px;
     padding-left: 20px;
-    width: 280px;
-    height: 50px;
+    width: 250px;
+    height: 55px;
     border-radius: 25px 0 0 25px;
     border-color: #1C2B32;
+    border-style: double;
     flex-wrap: wrap;
-
+    background-color: transparent;
+    position: relative;
+    top: -190px;
+    font-family: Poppins, sans-serif;
 }
 
 .header-tekst {
-    font-size: 13px;
-    margin-bottom: 15px;
+    font-size: 12px;
+    margin-top: -35px;
+    margin-bottom: -15px;
     flex-wrap: wrap;
+    color: #1C2B32;
+    position: relative;
+    bottom: 230px;
+}
+
+input::placeholder {
+    color: #1C2B32;
 }
 
 /*///////////// 3.2 Testimonial /////////////*/
