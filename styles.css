@@ -23,6 +23,8 @@ Table of Contents:
 
 body {
     font-family: Poppins, sans-serif;
+    color: #1C2B32;
+    text-align: center;
 }
 
 /*////////////////////////
@@ -41,83 +43,112 @@ body {
 /*///////////// 3.1 Header /////////////*/
 .header {
     width: 100%;
-    height: 600px; /* Adjust this height as needed */
+    min-height: 600px;
     text-align: center;
-    overflow: hidden;
+    overflow: visible;
 
-    /* Background image applied to header only */
     background-image: url('assets/images/mountains.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    /* Center content */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
 h1 {
     position: relative;
+    padding-top: 70px;
     font-size: 80px;
     max-width: 100%;
     color: #1C2B32;
     text-align: center;
     white-space: normal;
-    height: 45vh;
-}
-
-.check {
-    margin: -7px;
-    background-color: #1C2B32;
-    color: #fffdf1;
-    position: relative;
-    top: -190px;
-    font-family: Poppins, sans-serif;
-    font-size: 13px;
-}
-
-button {
-    width: 200px;
-    height: 55px;
-    border-radius: 0 25px 25px 0;
-    border-color: #1C2B32;
-    border-style: double;
-    padding: 0 0 0 10px;
-    text-align: center;
-}
-
-#domein {
-    padding-left: 20px;
-    width: 250px;
-    height: 55px;
-    border-radius: 25px 0 0 25px;
-    border-color: #1C2B32;
-    border-style: double;
-    flex-wrap: wrap;
-    background-color: transparent;
-    position: relative;
-    top: -190px;
-    font-family: Poppins, sans-serif;
 }
 
 .header-tekst {
     font-size: 12px;
-    margin-top: -35px;
-    margin-bottom: -15px;
+    margin-top: 10px;
     flex-wrap: wrap;
     color: #1C2B32;
-    position: relative;
     bottom: 230px;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+
+
+    .check {
+        background-color: #1C2B32;
+        color: #fffdf1;
+        font-family: Poppins, sans-serif;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    button {
+        width: 200px;
+        height: 55px;
+        border-radius: 0 25px 25px 0;
+        border-color: #1C2B32;
+        border-style: double;
+        text-align: center;
+        pointer-events: auto;
+        position: relative;
+        z-index: 10;
+
+    }
+    button:hover {
+        background-color: #304148;
+    }
+    button:active {
+        background-color: #4d5f66;
+    }
+
+    #domein {
+        width: 250px;
+        height: 55px;
+        margin-top: 10px;
+        border-radius: 25px 0 0 25px;
+        border-color: #1C2B32;
+        border-style: double;
+        flex-wrap: wrap;
+        background-color: transparent;
+        font-family: Poppins, sans-serif;
+        text-align: center;
+    }
+
 }
 
 input::placeholder {
     color: #1C2B32;
 }
 
-/*///////////// 3.2 Testimonial /////////////*/
+/*///////////// 3.2 Main /////////////*/
+main {
+    max-width: 1000px;
+    margin: auto;
+}
 
+.sectie-beoordelingen {
+    padding-top: 40px;
+}
+
+.sectie-support {
+
+}
+
+.callcenter-foto {
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+}
 
 /*///////////// 3.3 Support /////////////*/
 
