@@ -27,6 +27,15 @@ body {
     text-align: center;
 }
 
+a {
+    color: grey;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
 /*////////////////////////
     2. Typography
 ////////////////////////*/
@@ -104,9 +113,12 @@ form {
         z-index: 10;
 
     }
+
     button:hover {
+        transition: background-color 0.3s ease;
         background-color: #304148;
     }
+
     button:active {
         background-color: #4d5f66;
     }
@@ -140,20 +152,125 @@ main {
     padding-top: 40px;
 }
 
-.sectie-support {
-
+.review-box {
+    background-color: white;
+    color: #1C2B32;
+    padding: 20px 40px 40px 40px;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 50px auto;
+    text-align: start;
+    font-size: 13px;
 }
 
-.callcenter-foto {
-    max-width: 90%;
-    max-height: 90%;
+.review-tekst {
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.quote {
+    position: relative;
+    top: 30px;
+}
+.klant-naam {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-style: italic;
+    text-align: left;
     position: relative;
 }
 
-/*///////////// 3.3 Support /////////////*/
+.klant-naam-2 {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-style: italic;
+    text-align: left;
+    position: relative;
 
+}
+
+.foto-jane {
+    width: 44px;
+    position: relative;
+    top: 15px;
+    vertical-align: baseline;
+    margin-right: 20px;
+}
+
+.foto-john {
+    width: 44px;
+    position: relative;
+    top: 15px;
+    vertical-align: baseline;
+    margin-right: 20px;
+}
+
+/*///////////// 3.3 Support /////////////*/
+.sectie-support {
+    text-align: left;
+}
+
+.callcenter-foto {
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+    margin-top: 40px;
+
+}
+
+.callcenter-tekst {
+    position: relative;
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: left;
+}
 
 /*///////////// 3.4 Faq /////////////*/
+.neem-contact-op-knop {
+    font-family: Poppins, sans-serif;
+    background-color: #1C2B32;
+    color: white;
+    border-radius: 50px;
+    width: 170px;
+    height: 55px;
+    margin-top: 20px;
+    position: relative;
+}
 
+.neem-contact-op-knop:hover {
+    background-color: #304148;
+    transition: background-color 0.3s ease;
+}
+
+.sectie-faq {
+    text-align: left;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.veelgestelde-vragen-titel {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.faq-vragen-tekst {
+    background-color: #74868d;
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 25px 25px 25px 25px;
+}
+
+summary {
+    cursor: pointer;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+#footer {
+    background-color: #1C2B32;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    height: 70px;
+    padding-top: 30px;
+}
